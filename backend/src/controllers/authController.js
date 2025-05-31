@@ -2,9 +2,14 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+require('dotenv').config();
 
 const usersFilePath = path.join(__dirname, "../../data/users.json");
-const JWT_SECRET = "your_jwt_secret_here";
+const JWT_SECRET = process.env.TOKEN_SECRET;
+
+if (!JWT_SECRET) {
+  throw new Error("TOKEN_SECRET is not defined in .env file");
+}
 
 // Simple token blacklist (not for production)
 let blacklistedTokens = [];
