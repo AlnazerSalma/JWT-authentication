@@ -1,0 +1,170 @@
+/* --------- */
+/* conatct */
+/* --------- */
+
+.contact-title {
+  text-align: left;
+  font-size: 3.4rem;
+  padding: 0.5rem 0rem 0rem 7rem;
+  color: #0093af;
+  font-weight: bold;
+}
+
+.contact-info-wrapper {
+  padding-left: 2rem;
+  margin: 3rem 0rem 0rem 6rem;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  padding-left: 0.5rem;
+}
+
+.contact-detail {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.contact-icon {
+  margin-right: 1rem;
+  color: #0093af;
+  font-size: 22px;
+}
+
+.form-wrapper {
+  margin-top: 3rem;
+}
+
+.form-box {
+  background-color: #30717e4d;
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #101011;
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #6e6d6d;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #0093af;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #002d62;
+}
+
+.auth-link {
+  color: #0093af;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.auth-link:hover {
+  text-decoration: solid;
+}
+
+
+/* Define keyframes for the animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.form-box {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.contact-info {
+  animation: slideInFromRight 1s ease-out;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .contact-title {
+    padding: 0.5rem 1rem;
+    font-size: 2.9rem;
+  }
+
+  .contact-info-wrapper {
+    padding-left: 1rem;
+    margin: 1rem 0;
+    order: 2;
+  }
+
+  .form-wrapper {
+    margin: 1rem 0;
+    order: 1;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-detail {
+    font-size: 1rem;
+  }
+
+  .form-box {
+    padding: 2rem;
+    max-width: 100%;
+    margin: 1rem 0.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+  
+}

@@ -1,0 +1,53 @@
+.form-box {
+  background-color: #0a0416a9;
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #777b7c;
+  max-width: 600px;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea,
+select{
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #6e6d6d;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #0c2340;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #002d62;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}

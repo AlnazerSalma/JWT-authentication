@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1748714982961,
+    "name": "salma",
+    "email": "salmaalnazer2002@gmail.com",
+    "role": "user",
+    "passwordHash": "$2b$10$OfCWooDGyp5AVZLyHdym7ONfS06qoz9.R.qOecLFPJl2W3TVWToHi"
+  },
+  {
+    "id": 1748715081244,
+    "name": "rola",
+    "email": "rola@gmail.com",
+    "role": "admin",
+    "passwordHash": "$2b$10$dDilZez6B4ACwZyfeybcI.SN7Sh8H76RahVq7SARfFE8JDibgjlCe"
+  }
+]
